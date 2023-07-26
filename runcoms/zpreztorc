@@ -37,9 +37,16 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'spectrum' \
   'utility' \
+  'git' \
+  'python' \
+  'conda' \
+  'rustup' \
   'completion' \
   'history-substring-search' \
-  'prompt'
+  'syntax-highlighting' \
+  'prompt' \
+  'autosuggestions' \
+  'command-not-found'
 
 #
 # Autosuggestions
@@ -160,6 +167,9 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 # Python
 #
 
+zstyle ':prezto:module:python' skip-virtualenvwrapper-init 'on'
+zstyle ':prezto:module:python' conda-init 'on'
+
 # Auto switch the Python virtualenv on directory change.
 # zstyle ':prezto:module:python:virtualenv' auto-switch 'yes'
 
@@ -219,7 +229,7 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 #
 
 # Auto set the tab and window titles.
-# zstyle ':prezto:module:terminal' auto-title 'yes'
+zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Set the window title format.
 # zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'
