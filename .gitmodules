@@ -29,3 +29,6 @@
 	path = modules/prompt/external/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
 	shallow = true
+[submodule "modules/conda/external"]
+	path = modules/conda/external
+	url = https://github.com/conda-incubator/conda-zsh-completion.git
