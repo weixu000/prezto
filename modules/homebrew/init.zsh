@@ -47,3 +47,6 @@ if ! zstyle -t ':prezto:module:homebrew:alias' skip; then
   alias casku='brew upgrade --cask'
   alias caskx='brew uninstall --cask'
 fi
+
+# Add site-functions to $fpath.
+fpath+="$(brew --prefix)/share/zsh/site-functions"

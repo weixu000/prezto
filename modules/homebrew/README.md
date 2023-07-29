@@ -1,6 +1,10 @@
 # Homebrew
 
-Defines Homebrew specific environment variables and aliases.
+Defines Homebrew specific environment variables, aliases and completion definitions.
+
+This module must be loaded _before_ the [_`completion`_][13] module so that the
+provided completion definitions are loaded automatically by _`completion`_
+module.
 
 ## Variables
 
